@@ -20,6 +20,8 @@ const  firstRecurringCharacter = (input) => {
 }
 firstRecurringCharacter([2,5,5,2,3,5,1,2,4])
 
+
+
 //Bonus... What if we had this:
 // [2,5,5,2,3,5,1,2,4]
 // return 5 because the pairs are before 2,2
