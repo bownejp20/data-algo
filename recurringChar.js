@@ -20,4 +20,18 @@ const  firstRecurringCharacter = (input) => {
 }
 firstRecurringCharacter([2,5,5,2,3,5,1,2,4])
 
+//Bonus... What if we had this:
+// [2,5,5,2,3,5,1,2,4]
+// return 5 because the pairs are before 2,2
 
+
+const  firstRecurringCharacter = (input) => {
+  const countedNums = {}
+  for(let i = 0; i < input.length; i++){
+    countedNums[input[i]] = countedNums[input[i]]? countedNums[input[i]] + 1 : 1
+    if(countedNums[input[i]] === 2){
+      return input[i]
+    }
+  }
+}
+firstRecurringCharacter([2,5,5,2,3,5,1,2,4])
