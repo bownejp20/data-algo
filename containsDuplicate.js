@@ -12,7 +12,7 @@ const containsDuplicate = (nums) => {
 
 containsDuplicate([1,1,1,3,3,4,3,2,4,2])
 
-const containsDuplicate = (nums) => {
+const containsDuplicate2 = (nums) => {
   const count = {}
   for(let i = 0; i < nums.length; i++){
    if(count[nums[i]]){
@@ -23,7 +23,7 @@ const containsDuplicate = (nums) => {
   }
   return false
    }
- containsDuplicate([1,1,1,3,3,4,3,2,4,2])
+ containsDuplicate2([1,1,1,3,3,4,3,2,4,2])
  
 
 
